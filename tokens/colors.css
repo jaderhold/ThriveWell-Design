@@ -1,0 +1,98 @@
+/* ============================================================
+   ThriveWell Cancer Foundation — Color Tokens
+   Brand colors taken verbatim from the 2016 Logo Usage Guide.
+   ============================================================ */
+:root {
+  /* ---- Brand palette (exact PMS/HEX from brand guide) ---- */
+  --tw-blue:         #0069b1; /* PMS 2196 — primary "Thrive" blue */
+  --tw-sky:          #56b7e6; /* PMS 2190 — light "Well" blue */
+  --tw-green:        #6cc24a; /* PMS 360  — primary leaf green */
+  --tw-green-dark:   #48a23f; /* PMS 7738 — deep green */
+  --tw-green-light:  #a1d884; /* PMS 359  — soft leaf green */
+  --tw-yellow:       #ffcd00; /* PMS 116  — sun / optimism accent */
+  --tw-pink:         #e782a9; /* PMS 204  — Diva (Diva&Dude program) */
+
+  /* Derived brand tints/shades (harmonized in oklch) */
+  --tw-blue-700:     #00528c;
+  --tw-blue-600:     #005f9f;
+  --tw-blue-100:     #d8ecf8;
+  --tw-blue-50:      #eef7fc;
+  --tw-sky-100:      #ddf0fb;
+  --tw-green-700:    #2c6a25; /* darkened for WCAG-AA text contrast */
+  --tw-green-100:    #e4f4d9;
+  --tw-green-50:     #f1faea;
+  --tw-yellow-100:   #fff3c2;
+  --tw-pink-100:     #fbe2ec;
+
+  /* ---- Neutral scale (cool slate) ---- */
+  --tw-gray-50:  #f6f8fa;
+  --tw-gray-100: #eef2f5;
+  --tw-gray-200: #dfe6ec;
+  --tw-gray-300: #c7d2db;
+  --tw-gray-400: #9aa9b5;
+  --tw-gray-500: #6b7b88;
+  --tw-gray-600: #4d5b67;
+  --tw-gray-700: #36424c;
+  --tw-gray-800: #232c34;
+  --tw-gray-900: #141a20;
+  --tw-white:    #ffffff;
+
+  /* ============================================================
+     Semantic aliases — use these in components
+     ============================================================ */
+  /* Brand actions */
+  --brand:           var(--tw-blue);
+  --brand-hover:     var(--tw-blue-600);
+  --brand-active:    var(--tw-blue-700);
+  --brand-contrast:  var(--tw-white);
+  --brand-soft:      var(--tw-blue-50);
+
+  --accent:          var(--tw-sky);     /* secondary / highlights */
+  --accent-soft:     var(--tw-sky-100);
+
+  /* Program / status hues */
+  --success:         var(--tw-green-dark);
+  --success-soft:    var(--tw-green-50);
+  --warning:         var(--tw-yellow);
+  --warning-soft:    var(--tw-yellow-100);
+  --diva:            var(--tw-pink);    /* Diva — women's wellness program (fills/accents) */
+  --diva-soft:       var(--tw-pink-100);
+  --diva-ink:        #a82e63;           /* text-safe deep pink (AA on white) */
+  --dude:            var(--tw-sky);     /* Dude — men's wellness program (fills/accents) */
+  --dude-soft:       var(--tw-sky-100);
+  --dude-ink:        #00598f;           /* text-safe deep blue (AA on white) */
+  --growth:          var(--tw-green);   /* wellness / progress */
+  --growth-soft:     var(--tw-green-100);
+
+  /* Text-safe brand "inks" — use these whenever a brand hue must be TEXT.
+     The bright fills (--tw-green, --tw-pink, --tw-sky) fail WCAG as text. */
+  --ink-blue:        var(--tw-blue);    /* #0069b1 — 5.7:1 on white */
+  --ink-green:       var(--tw-green-700);/* #2c6a25 — 6.5:1 on white */
+  --ink-pink:        var(--diva-ink);   /* #a82e63 — 6.5:1 on white */
+  --ink-dude:        var(--dude-ink);   /* #00598f — 6.8:1 on white */
+
+  /* Text */
+  --text-strong:     var(--tw-gray-900);
+  --text-body:       var(--tw-gray-700);
+  --text-muted:      #5c6b77; /* darkened from gray-500 for WCAG-AA (5.5:1 on white) */
+  --text-inverse:    var(--tw-white);
+  --text-brand:      var(--tw-blue);
+  --text-link:       var(--tw-blue);
+  --text-link-hover: var(--tw-blue-700);
+
+  /* Surfaces */
+  --surface-page:    var(--tw-white);
+  --surface-card:    var(--tw-white);
+  --surface-subtle:  var(--tw-gray-50);
+  --surface-muted:   var(--tw-gray-100);
+  --surface-inverse: var(--tw-gray-900);
+  --surface-brand:   var(--tw-blue);
+
+  /* Borders */
+  --border-subtle:   var(--tw-gray-200);
+  --border-default:  var(--tw-gray-300);
+  --border-strong:   var(--tw-gray-400);
+
+  /* Focus */
+  --focus-ring:      color-mix(in srgb, var(--tw-sky) 55%, transparent);
+}
