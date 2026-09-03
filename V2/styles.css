@@ -405,7 +405,10 @@
   .aside .row{font-size:14px;padding:7px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:10px}
   .aside .row:first-of-type{border-top:none}
 
-  footer.site{background:var(--gradient-sky);color:#eaf2fc;margin-top:0}
+  footer.site{background:var(--gradient-sky);color:#eaf2fc;margin-top:0;position:relative;overflow:hidden}
+  .foot-mark{position:absolute;right:-70px;bottom:-90px;height:520px;width:auto;opacity:.08;pointer-events:none;z-index:0}
+  footer.site>*:not(.foot-mark){position:relative;z-index:1}
+  @media(max-width:620px){.foot-mark{height:340px;right:-50px;bottom:-60px}}
   .foot-in{max-width:1200px;margin:0 auto;padding:56px 40px 34px;display:grid;grid-template-columns:1.7fr 1.1fr 1.1fr 1.1fr .9fr;gap:32px}
   .foot-desc{font-size:13px;line-height:1.5;color:rgba(255,255,255,.82);margin:0 0 14px;max-width:26ch}
   .foot-logo{height:68px;width:auto;display:block;margin-bottom:16px}
