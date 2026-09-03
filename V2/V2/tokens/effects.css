@@ -1,0 +1,42 @@
+/* ============================================================
+   ThriveWell — Effects: radii, shadows, borders, motion
+   Soft, rounded, optimistic. Shadows are low-contrast and cool.
+   ============================================================ */
+:root {
+  /* Corner radii — generous & friendly */
+  --radius-xs:   4px;
+  --radius-sm:   8px;
+  --radius-md:   12px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-pill: 999px;
+  --radius-card: var(--radius-lg);
+
+  /* Borders */
+  --border-width: 1px;
+  --border-hairline: 1px solid var(--border-subtle);
+
+  /* Shadows — soft, cool-tinted, never harsh */
+  --shadow-xs: 0 1px 2px rgba(20, 26, 32, 0.06);
+  --shadow-sm: 0 1px 3px rgba(20, 26, 32, 0.08), 0 1px 2px rgba(20, 26, 32, 0.04);
+  --shadow-md: 0 4px 12px rgba(20, 26, 32, 0.08), 0 2px 4px rgba(20, 26, 32, 0.04);
+  --shadow-lg: 0 12px 28px rgba(20, 26, 32, 0.12), 0 4px 8px rgba(20, 26, 32, 0.05);
+  --shadow-brand: 0 8px 22px color-mix(in srgb, var(--tw-blue) 28%, transparent);
+
+  /* Focus ring */
+  --ring: 0 0 0 3px var(--focus-ring);
+
+  /* Motion — gentle, encouraging; no bounces */
+  --ease-standard: cubic-bezier(0.22, 0.61, 0.36, 1); /* @kind other */
+  --ease-out: cubic-bezier(0, 0, 0.2, 1); /* @kind other */
+  --dur-fast: 120ms; /* @kind other */
+  --dur-base: 200ms; /* @kind other */
+  --dur-slow: 320ms; /* @kind other */
+
+  /* Signature ThriveWell gradients.
+     --gradient-sky & --gradient-growth carry WHITE / DARK text respectively (WCAG-safe).
+     --gradient-sun is a warm yellow→gold wash; pair ONLY with dark text. */
+  --gradient-sky:    linear-gradient(135deg, var(--tw-blue) 0%, var(--tw-blue-700) 100%);
+  --gradient-growth: linear-gradient(135deg, var(--tw-green-dark) 0%, var(--tw-green-light) 100%);
+  --gradient-sun:    linear-gradient(120deg, #ffe14d 0%, #e89400 100%); /* @kind color */ /* bright→deep gold, donate */
+}

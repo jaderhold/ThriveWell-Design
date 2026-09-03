@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YTAC Invitational Fishing Tournament · ThriveWell Cancer Foundation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="tokens/fonts.css">
+<link rel="stylesheet" href="tokens/colors.css">
+<link rel="stylesheet" href="tokens/typography.css">
+<link rel="stylesheet" href="tokens/spacing.css">
+<link rel="stylesheet" href="tokens/effects.css">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<script src="image-slot.js"></script>
+<script src="nav.js"></script>
+</head>
+<body>
+<div id="app">
+
+
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="nav-top">
+      <img class="logo" src="assets/logo/thrivewell-logo.png" alt="ThriveWell Cancer Foundation" onclick="go('home')">
+      <div class="nav-right">
+        <div class="nav-search"><i class="fa-solid fa-magnifying-glass"></i><input type="search" id="siteSearch" placeholder="Search" oninput="runSiteSearch()" onclick="event.stopPropagation()" autocomplete="off"><div id="searchResults"></div></div>
+        <button class="nav-donate" onclick="go('donate')">Donate Now</button>
+      </div>
+    </div>
+    <div class="nav-bottom">
+      <nav class="primary" id="primaryNav"><div class="navitem" data-ix="0"><button class="" onclick="go('impact')">About Us <span class="caret">▾</span></button><div class="dropdown"><a class="" onclick="go('impact')">Overview</a><a class="" onclick="go('board')">Board</a><a class="" onclick="go('team')">Team</a><a class="" onclick="go('financials')">Financial Transparency</a><a class="" onclick="go('resources')">Resources</a><a class="" onclick="go('contact')">Contact Us</a></div></div><div class="navitem" data-ix="1"><button class="" onclick="go('programs')">Programs <span class="caret">▾</span></button><div class="dropdown"><a class="" onclick="go('programs')">Overview</a><a class="" onclick="go('wellness')">Wellness Program</a><a class="" onclick="go('patients')">Patient Assistance</a><a class="" onclick="go('research')">Research</a></div></div><div class="navitem" data-ix="2"><button class="" onclick="go('stories')">Impact <span class="caret">▾</span></button><div class="dropdown"><a class="" onclick="go('stories')">Lives Changed</a><a class="" onclick="go('news')">News &amp; Newsletters</a></div></div><div class="navitem" data-ix="3"><button class="active" onclick="go('events')">Events</button></div><div class="navitem" data-ix="4"><button class="" onclick="go('donate')">Donate</button></div></nav>
+    </div>
+  </div>
+  <div class="subnav" id="subnav" style="display:none"><div class="subnav-inner" id="subnavInner"></div></div>
+</header>
+
+<main id="view" class="sectioned rule-sep">
+
+
+  <section class="pg-hero">
+    <img class="pg-hero-mark" src="assets/logo/thrivewell-mark-white.png" alt="" aria-hidden="true">
+    <div class="pg-hero-in"><div class="crumbs pg-crumb"><span onclick="go('events')">Events</span> › YTAC Invitational Fishing Tournament</div>
+      <div class="pg-eyebrow">Events</div>
+      <h1 class="pg-hero-h">YTAC Invitational Fishing Tournament</h1>
+      <p class="pg-hero-p"><strong>A weekend of fishing, fun, and giving back on the coast — run by Young Texans Against Cancer (YTAC), our younger-donor sub-brand.</strong> July 2027<br>Port Aransas<br>TX</p>
+    </div>
+  </section>
+
+
+
+
+<section class="ip-band"><div class="ip-wrap"><image-slot id="evhero-fishing" shape="rounded" radius="16" fit="cover" position="50% 30%" placeholder="YTAC Invitational Fishing Tournament" style="display:block;width:100%;height:420px;margin:8px 0 24px"></image-slot><div style="max-width:720px">
+  <p class="body">A weekend of fishing, fun, and giving back on the coast — run by Young Texans Against Cancer (YTAC), our younger-donor sub-brand. Grab your friends; you won’t want to miss it.</p><image-slot id="evinline-fishing" shape="rounded" radius="12" fit="cover" position="50% 30%" placeholder="YTAC Invitational Fishing Tournament" style="display:block;width:100%;height:300px;margin:24px 0"></image-slot><p class="body">A coastal weekend of fishing and camaraderie in Port Aransas. Enter a team, sponsor, or join the awards party.</p>
+  <p class="editnote">Full event copy pending — paste the complete text from the published event page here on build.</p>
+</div><div class="event-cta" style="max-width:720px;margin-top:28px">
+  <div class="cta-copy">
+    <div class="eyebrow">July 2027<br>Port Aransas<br>TX</div>
+    <h3>Register, buy tickets, or donate</h3>
+    <p>Tickets, registration, sponsorships, and donations for YTAC Invitational Fishing Tournament live on the official event page — one tap to take part.</p>
+  </div>
+  <div class="cta-action">
+    <a class="btn btn-give" href="https://thrivewell.org/fishing" target="_blank" rel="noopener">Go to the event page →</a>
+    <span class="cta-note">Opens the current event page</span>
+  </div>
+</div><div class="pill-row" style="margin-top:18px"><span class="pill" onclick="go('events')">← All events</span> <span class="pill" style="border-color:var(--dn);color:var(--dn-ink)" onclick="go('donate')">Donate →</span></div></div></section></main>
+
+<footer class="site">
+  <img class="foot-mark" src="assets/logo/thrivewell-mark-white.png" alt="" aria-hidden="true">
+  <div class="foot-in">
+    <div class="foot-brand">
+      <img class="foot-logo" src="assets/logo/thrivewell-logo-white.png" alt="ThriveWell Cancer Foundation">
+      <p class="foot-tag">Helping San Antonio families thrive despite a cancer diagnosis since 2007.</p>
+    </div>
+    <div>
+      <h5>Patients &amp; Families</h5>
+      <a onclick="go('patients')">Patient Assistance</a>
+      <a onclick="go('wellness')">Diva&amp;Dude Wellness</a>
+      <a onclick="go('register')">Join a Class</a>
+    </div>
+    <div>
+      <h5>Donors &amp; Supporters</h5>
+      <a onclick="go('donate')">Donate</a>
+      <a onclick="go('fundraise')">Start a Fundraiser</a>
+      <a onclick="go('events')">Events</a>
+    </div>
+    <div>
+      <h5>Research Community</h5>
+      <a onclick="go('research')">Our Research</a>
+      <a onclick="go('impact')">Our Impact</a>
+    </div>
+    <div>
+      <h5>About</h5>
+      <a onclick="go('impact')">Our Story</a>
+      <a onclick="go('board')">Our Board</a>
+      <a onclick="go('team')">Our Team</a>
+      <a onclick="go('share')">Share Your Story</a>
+      <a onclick="go('financials')">Financials &amp; 990s</a>
+      <a onclick="go('contact')">Contact</a>
+    </div>
+  </div>
+  <div class="foot-social">
+    <span class="lbl">Follow us</span>
+    <a class="fsoc" href="https://www.facebook.com/ThriveWellSA/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"></path></svg></a>
+    <a class="fsoc" href="https://www.instagram.com/ThrivewellSa/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.38C1.36 2.67.95 3.34.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.12.66.66 1.33 1.07 2.12 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.38.66-.66 1.07-1.33 1.38-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.38-2.12C21.33 1.36 20.66.95 19.86.63 19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zM12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm6.41-10.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"></path></svg></a>
+    <a class="fsoc" href="https://twitter.com/ThrivewellSa" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.46l8.6-9.83L0 1.15h7.59l5.24 6.93 6.07-6.93zm-1.29 19.5h2.04L6.49 3.24H4.3l13.31 17.41z"></path></svg></a>
+    <a class="fsoc" href="https://www.youtube.com/thrivewellsa" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19C0 8.08 0 12 0 12s0 3.92.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.92 24 12 24 12s0-3.92-.5-5.81zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"></path></svg></a>
+  </div>
+  <div class="tagband">Text <strong>THRIVEWELL</strong> to 243-725 to give &nbsp;·&nbsp; A Texas 501(c)(3) nonprofit · EIN 26-0371270</div>
+  <div class="foot-bot">
+    <span>© 2026 ThriveWell Cancer Foundation · A Texas 501(c)(3) nonprofit · EIN 26-0371270</span>
+    <span><a href="https://thrivewell.org/terms-and-conditions" target="_blank" rel="noopener" style="text-decoration:underline">Terms</a> · <a href="https://thrivewell.org/privacy-policy" target="_blank" rel="noopener" style="text-decoration:underline">Privacy</a> · <a href="tel:2105935949">(210) 593-5949</a></span>
+  </div>
+</footer></div>
+</body>
+</html>

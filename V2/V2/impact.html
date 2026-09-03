@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us · ThriveWell Cancer Foundation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="tokens/fonts.css">
+<link rel="stylesheet" href="tokens/colors.css">
+<link rel="stylesheet" href="tokens/typography.css">
+<link rel="stylesheet" href="tokens/spacing.css">
+<link rel="stylesheet" href="tokens/effects.css">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<script src="image-slot.js"></script>
+<script src="nav.js"></script>
+</head>
+<body>
+<div id="app">
+
+
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="nav-top">
+      <img class="logo" src="assets/logo/thrivewell-logo.png" alt="ThriveWell Cancer Foundation" onclick="go('home')">
+      <div class="nav-right">
+        <div class="nav-search"><i class="fa-solid fa-magnifying-glass"></i><input type="search" id="siteSearch" placeholder="Search" oninput="runSiteSearch()" onclick="event.stopPropagation()" autocomplete="off"><div id="searchResults"></div></div>
+        <button class="nav-donate" onclick="go('donate')">Donate Now</button>
+      </div>
+    </div>
+    <div class="nav-bottom">
+      <nav class="primary" id="primaryNav"><div class="navitem" data-ix="0"><button class="active" onclick="go('impact')">About Us <span class="caret">▾</span></button><div class="dropdown"><a class="on" onclick="go('impact')">Overview</a><a class="" onclick="go('board')">Board</a><a class="" onclick="go('team')">Team</a><a class="" onclick="go('financials')">Financial Transparency</a><a class="" onclick="go('resources')">Resources</a><a class="" onclick="go('contact')">Contact Us</a></div></div><div class="navitem" data-ix="1"><button class="" onclick="go('programs')">Programs <span class="caret">▾</span></button><div class="dropdown"><a class="" onclick="go('programs')">Overview</a><a class="" onclick="go('wellness')">Wellness Program</a><a class="" onclick="go('patients')">Patient Assistance</a><a class="" onclick="go('research')">Research</a></div></div><div class="navitem" data-ix="2"><button class="" onclick="go('stories')">Impact <span class="caret">▾</span></button><div class="dropdown"><a class="" onclick="go('stories')">Lives Changed</a><a class="" onclick="go('news')">News &amp; Newsletters</a></div></div><div class="navitem" data-ix="3"><button class="" onclick="go('events')">Events</button></div><div class="navitem" data-ix="4"><button class="" onclick="go('donate')">Donate</button></div></nav>
+    </div>
+  </div>
+  <div class="subnav" id="subnav" style="display:none"><div class="subnav-inner" id="subnavInner"></div></div>
+</header>
+
+<main id="view" class="sectioned rule-sep">
+
+  <section class="pg-hero">
+    <img class="pg-hero-mark" src="assets/logo/thrivewell-mark-white.png" alt="" aria-hidden="true">
+    <div class="pg-hero-in">
+      <div class="pg-eyebrow">About ThriveWell Cancer Foundation</div>
+      <h1 class="pg-hero-h">About Us</h1>
+      <p class="pg-hero-p"><strong>ThriveWell Cancer Foundation helps San Antonio families face cancer.</strong> Since 2007, ThriveWell Cancer Foundation has helped over 12,000 local families carry what a cancer diagnosis piles on — the costs, the logistics, and the loneliness. We work across San Antonio and the surrounding eight counties, and everything we provide directly to patients and survivors is free.</p>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="ip-band"><div class="ip-wrap"><div class="hm-eyebrow">How We Help</div><h2 class="hm-h2">What We Do</h2><p class="hm-lede">Our work runs through three programs — here’s the difference each one makes.</p><div class="hm-progs" style="margin-top:8px">
+  <div class="hm-prog" onclick="go('patients')" id="patient-assistance">
+    <span class="bar" style="background:var(--tw-blue)"></span>
+    <span class="chip" style="background:color-mix(in srgb,var(--tw-blue) 16%,white);color:var(--ink-blue)"><i class="fa-solid fa-hand-holding-heart"></i></span>
+    <span class="eb" style="color:var(--ink-blue)">Get help</span>
+    <h4>Patient Assistance</h4>
+    <p>When the cost of treatment threatens a family, we cover it — so no one has to choose between getting care and keeping up with life.</p>
+    <span class="act" style="color:var(--ink-blue)">Full eligibility &amp; details →</span>
+  </div>
+  <div class="hm-prog" onclick="go('wellness')" id="wellness">
+    <span class="bar" style="background:var(--diva)"></span>
+    <span class="chip" style="background:color-mix(in srgb,var(--diva) 16%,white);color:var(--diva-ink)"><i class="fa-solid fa-spa"></i></span>
+    <span class="eb" style="color:var(--diva-ink)">Wellness</span>
+    <h4>Wellness — Diva &amp; Dude</h4>
+    <p>Free weekly classes that keep patients strong, connected, and themselves — through treatment and long after.</p>
+    <span class="act" style="color:var(--diva-ink)">Explore Diva &amp; Dude →</span>
+  </div>
+  <div class="hm-prog" onclick="go('research')" id="research">
+    <span class="bar" style="background:var(--tw-green)"></span>
+    <span class="chip" style="background:color-mix(in srgb,var(--tw-green) 18%,white);color:var(--ink-green)"><i class="fa-solid fa-flask"></i></span>
+    <span class="eb" style="color:var(--ink-green)">Research</span>
+    <h4>Research</h4>
+    <p>Beyond the help we give today, we invest in San Antonio cancer research — bringing the next breakthrough closer to home.</p>
+    <span class="act" style="color:var(--ink-green)">Explore our research →</span>
+  </div>
+</div><section class="ip-numbers" style="position:relative;left:50%;transform:translateX(-50vw);width:100vw;background:var(--gradient-dawn);margin:60px 0;padding:76px 0">
+  <div style="max-width:1100px;margin:0 auto;padding:0 40px">
+    <div class="hm-eyebrow">Our Impact</div>
+    <h2 class="hm-h2">By the Numbers</h2>
+    <p class="hm-lede"><strong style="color:var(--text-strong);font-weight:700">Not numbers — people.</strong> Every figure here is a San Antonio family that didn’t have to face cancer alone.</p>
+    <div class="hm-stats">
+      <div class="hm-stat" style="border-color:var(--tw-blue)"><div class="n" style="color:var(--ink-blue)">$16M+</div><div class="l">delivered to patients</div></div>
+      <div class="hm-stat" style="border-color:var(--tw-green)"><div class="n" style="color:var(--ink-green)">12,000+</div><div class="l">families served since 2007</div></div>
+      <div class="hm-stat" style="border-color:var(--diva)"><div class="n" style="color:var(--diva-ink)">1,707</div><div class="l">helped in 2024</div></div>
+    </div>
+  </div>
+</section><div class="hm-eyebrow">Trust &amp; Transparency</div><h2 class="hm-h2">A Foundation You Can Trust</h2><p class="body">ThriveWell Cancer Foundation began in 2007 with a simple, stubborn conviction: that no one in San Antonio should have to choose between paying for treatment and paying to get to it.</p><p class="body">Our mission is to give every San Antonio cancer patient the best possible chance to beat the disease — and to truly live while they fight it.</p><div class="pill-row"><span class="pill" onclick="go('team')">Meet the team →</span></div><div class="galgrid">
+  <img src="https://thrivewell.org/wp-content/uploads/2026/03/IMG_9197-scaled-400x300.jpeg" alt="ThriveWell Cancer Foundation patients, survivors, and families">
+  <img src="https://thrivewell.org/wp-content/uploads/2025/11/IMG_7147-e1763947628265.jpeg" alt="ThriveWell Cancer Foundation patients, survivors, and families">
+  <img src="https://thrivewell.org/wp-content/uploads/2026/02/SJD_HIPEC-Survivor-e1779903693793-300x300.png" alt="ThriveWell Cancer Foundation patients, survivors, and families">
+</div><p class="body" style="margin-top:28px">ThriveWell Cancer Foundation holds a <strong>4-out-of-4-star rating</strong> and a <strong>100% Accountability &amp; Finance score</strong> from Charity Navigator, based on IRS Form 990 data (FY2024) — independent confirmation that gifts are managed responsibly and reach the people they’re meant for. A registered 501(c)(3) nonprofit; EIN 26-0371270.</p><div class="pill-row"><a class="pill" href="https://www.charitynavigator.org/ein/260371270" target="_blank" rel="noopener" style="text-decoration:none">View on Charity Navigator ↗</a> <span class="pill" onclick="go('financials')">Financials &amp; 990s →</span> <span class="pill" onclick="go('contact')">Contact Us →</span></div><div style="height:1px;background:var(--border-subtle);margin:56px 0"></div><div class="hm-eyebrow">Lives Changed</div><h2 class="hm-h2">In Their Words</h2><div style="display:flex;flex-direction:column;gap:24px;margin-top:24px">
+  <div class="hm-featured" onclick="go('story_claudia')">
+    <div class="hm-fmedia"><span class="hm-play">▶</span></div>
+    <div class="hm-fbody">
+      <span class="hm-fchip">Cancer journey</span>
+      <h3>Claudia Martinez</h3>
+      <p class="hm-fquote">“Having colon cancer at 45 is not a death sentence — at this point it has been more of a blessing than a curse.”</p>
+      <span class="hm-fhelp">How we helped: <b>Patient assistance &amp; treatment support</b></span>
+      <span class="hm-flink">Read Claudia’s story →</span>
+    </div>
+  </div>
+  <div class="hm-featured" onclick="go('story_dude')">
+    <div class="hm-fmedia" style="background:linear-gradient(135deg,var(--diva) 0%,#c65b86 100%)"><span class="hm-play">▶</span></div>
+    <div class="hm-fbody">
+      <span class="hm-fchip" style="color:var(--diva-ink);background:var(--wl-bg)">Diva &amp; Dude</span>
+      <h3>The Dude Program</h3>
+      <p class="hm-fquote">“The free Dude exercise and nutrition classes became essential to my recovery.”</p>
+      <span class="hm-fhelp">How we helped: <b>Dude wellness · Exercise &amp; nutrition</b></span>
+      <span class="hm-flink" style="color:var(--diva-ink)">Read the story →</span>
+    </div>
+  </div>
+</div><div class="pill-row" style="margin-top:20px"><span class="pill" onclick="go('stories')">More stories →</span></div><div style="height:1px;background:var(--border-subtle);margin:56px 0"></div><div class="hm-eyebrow">Get Involved</div><h2 class="hm-h2">Help Make It Possible</h2><p class="hm-lede">Whether you give once, give monthly, or bring your company alongside as a sponsor, your support goes to work right away for San Antonio families in active treatment.</p><div class="pill-row" style="align-items:center;margin-top:20px"><button class="btn btn-give" style="font-size:15px;padding:12px 26px" onclick="go('donate')">Donate →</button> <button class="btn btn-ghost" style="display:inline-flex;align-items:center;justify-content:center;font-size:15px;padding:12px 30px" onclick="go('sponsor')">Become a sponsor →</button></div></div></section></main>
+
+<footer class="site">
+  <img class="foot-mark" src="assets/logo/thrivewell-mark-white.png" alt="" aria-hidden="true">
+  <div class="foot-in">
+    <div class="foot-brand">
+      <img class="foot-logo" src="assets/logo/thrivewell-logo-white.png" alt="ThriveWell Cancer Foundation">
+      <p class="foot-tag">Helping San Antonio families thrive despite a cancer diagnosis since 2007.</p>
+    </div>
+    <div>
+      <h5>Patients &amp; Families</h5>
+      <a onclick="go('patients')">Patient Assistance</a>
+      <a onclick="go('wellness')">Diva&amp;Dude Wellness</a>
+      <a onclick="go('register')">Join a Class</a>
+    </div>
+    <div>
+      <h5>Donors &amp; Supporters</h5>
+      <a onclick="go('donate')">Donate</a>
+      <a onclick="go('fundraise')">Start a Fundraiser</a>
+      <a onclick="go('events')">Events</a>
+    </div>
+    <div>
+      <h5>Research Community</h5>
+      <a onclick="go('research')">Our Research</a>
+      <a onclick="go('impact')">Our Impact</a>
+    </div>
+    <div>
+      <h5>About</h5>
+      <a onclick="go('impact')">Our Story</a>
+      <a onclick="go('board')">Our Board</a>
+      <a onclick="go('team')">Our Team</a>
+      <a onclick="go('share')">Share Your Story</a>
+      <a onclick="go('financials')">Financials &amp; 990s</a>
+      <a onclick="go('contact')">Contact</a>
+    </div>
+  </div>
+  <div class="foot-social">
+    <span class="lbl">Follow us</span>
+    <a class="fsoc" href="https://www.facebook.com/ThriveWellSA/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"></path></svg></a>
+    <a class="fsoc" href="https://www.instagram.com/ThrivewellSa/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.38C1.36 2.67.95 3.34.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.12.66.66 1.33 1.07 2.12 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.38.66-.66 1.07-1.33 1.38-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.38-2.12C21.33 1.36 20.66.95 19.86.63 19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zM12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm6.41-10.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"></path></svg></a>
+    <a class="fsoc" href="https://twitter.com/ThrivewellSa" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.46l8.6-9.83L0 1.15h7.59l5.24 6.93 6.07-6.93zm-1.29 19.5h2.04L6.49 3.24H4.3l13.31 17.41z"></path></svg></a>
+    <a class="fsoc" href="https://www.youtube.com/thrivewellsa" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19C0 8.08 0 12 0 12s0 3.92.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.92 24 12 24 12s0-3.92-.5-5.81zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"></path></svg></a>
+  </div>
+  <div class="tagband">Text <strong>THRIVEWELL</strong> to 243-725 to give &nbsp;·&nbsp; A Texas 501(c)(3) nonprofit · EIN 26-0371270</div>
+  <div class="foot-bot">
+    <span>© 2026 ThriveWell Cancer Foundation · A Texas 501(c)(3) nonprofit · EIN 26-0371270</span>
+    <span><a href="https://thrivewell.org/terms-and-conditions" target="_blank" rel="noopener" style="text-decoration:underline">Terms</a> · <a href="https://thrivewell.org/privacy-policy" target="_blank" rel="noopener" style="text-decoration:underline">Privacy</a> · <a href="tel:2105935949">(210) 593-5949</a></span>
+  </div>
+</footer></div>
+</body>
+</html>
